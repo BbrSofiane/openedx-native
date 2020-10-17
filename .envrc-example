@@ -1,0 +1,15 @@
+export VIRTUAL_ENV="$(pwd)/.env"
+
+# AWS credentials
+export AWS_DEFAULT_REGION=
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
+export AWS_ACCOUNT_NUMBER=
+
+# to connect to the ec2 instance for troubleshooting
+export LOCAL_IP="$(curl ifconfig.me)"
+
+# https://github.com/direnv/direnv/wiki/Python#virtualenv
+layout python-venv
+
+# https://cloud-images.ubuntu.com/locator/ec2/
